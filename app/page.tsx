@@ -7,6 +7,7 @@ import { api } from '../convex/_generated/api'
 import { ModNavBar } from '@/components/navbars/ModNavBar'
 import LandingPage from './LandingPage/LandingPage'
 import Link from 'next/link'
+import MoodTracker from '@/components/MoodTracker'
 
 export default function Home() {
   return (
@@ -27,5 +28,7 @@ function Content() {
   return <div>
     <ModNavBar />
     Authenticated content: {messages?.length}
+    <MoodTracker />
+    <Link href="/DashBoard">Go to Dashboard</Link>
   </div>
 }
